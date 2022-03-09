@@ -6,6 +6,7 @@ io.on("connection", (socket) => {
   // ...
   socket.on("message", (message) => {
     socket.emit("message", "Hello, your message was received successfully!");
+    console.log(message);
   }
 
   )
